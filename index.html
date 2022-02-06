@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <title>BMI calculator</title>
+    <script src="https://kit.fontawesome.com/e579243508.js" crossorigin="anonymous"></script>
+</head>
+
+
+
+
+<body>
+<header>
+    <div class="calculator-header">
+        <h1>A javascript BMI calculator</h1>
+    </div>
+</header>
+
+
+<main>
+<div class="calculator-body">
+
+<div class="informative">
+    <h2>What "BMI" means?</h2>
+    <h3>Body Mass Index (BMI) is a person's weight divided by the square of height. A high BMI can indicate high body fatness.</h3>
+</div>
+
+<div class="informative-measure">
+    <h3 class="informative-measure-question">Would you rather use metric or imperial measure units?</h3>
+
+    <div>
+
+        <input type="checkbox" class="checkbox" id="checkbox" onchange="changePerspective()">
+        <label for="checkbox" class="checkbox-label">
+        <i class="fas fa-crown"></i>
+        <i class="fas fa-ruler"></i>
+        <div class="ball"></div>
+        </label>
+
+    </div>
+</div>
+
+<div class="inputs" >
+    <input type="text" id="userHeight" placeholder="Type your height..."> 
+    <label id="heightLabel" for="userHeight">Centimeters</label>
+    <input type="text" id="heightBtn" placeholder="Type your height...">
+    <label id="heightBtnLabel" for="heightBtn">Inches</label>
+</div>
+
+<div class="inputs">
+    <input type="text" id="userWeight" placeholder="Type your weight...">
+    <label id="weightLabel" for="userWeight">Kilograms</label>
+    <input type="text" id="weightBtn" placeholder="Type your weight...">
+    <label id="weightBtnLabel" for="weightBtn">Oz</label>
+</div>
+
+<div class="centerSubmitButton">
+
+    <button id="submitBtn">SUBMIT</button>
+
+</div>
+
+<div>
+    <h2 class="removeMargin"><span id="bmiRes"></span></h2></h2>
+    <h3><span id="bmiInfo"></span></h3>
+</div>
+
+
+
+
+</div>
+</main>
+</body>
+<script src="main.js"></script>
+</html>
